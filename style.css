@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+}
+
+/* About Me Section Styles */
+#about-me {
+    background: url('foto.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1.5rem; /* Adequate padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 80vh; /* Ensures enough space for content */
+}
+
+#about-me h1 {
+    color: lightblue;
+    font-size: 2.5rem; /* Smaller font size */
+    font-weight: 700;
+    letter-spacing: 6px; /* Slightly reduced spacing */
+    margin-bottom: 1.5rem;
+}
+
+#about-me .image img {
+    width: 150px; /* Smaller image size */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-bottom: 1.5rem; /* Adjusted margin */
+}
+
+#about-me p {
+    font-size: 1.2rem; /* Smaller font size */
+    color: #ddd;
+    line-height: 2rem; /* Adjusted line height */
+    margin: 0 auto;
+    max-width: 700px; /* Slightly reduced max width */
+    padding: 0 1rem;
+}
+
+#about-me .button {
+    display: inline-block;
+    padding: 1.2rem 3rem; /* Reduced padding */
+    background: #f6f6f6;
+    font-size: 1.6rem; /* Adjusted font size */
+    text-decoration: none;
+    color: #398f51;
+    border-radius: 10px;
+    margin-top: 2rem; /* Adjusted margin */
+    transition: background 0.5s;
+    position: relative; /* Changed from absolute to relative */
+    margin-top: 3rem;
+}
+
+#about-me .button:hover {
+    background: #dadada;
+}
+
+/* Game Section Styles */
+#game-page {
+    background: url('dice.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+header {
+    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #fff;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffdf00;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+    color: #fff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    width: 60px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffdf00;
+    background: linear-gradient(to bottom, #1a1a1a, #333);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, background 0.5s ease;
+}
+
+#game-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#guess-input {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 220px;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(90deg, #ff8c00, #e52e71);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #e52e71, #ff8c00);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+#lives img.heart {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    filter: drop-shadow(0 3px 5px rgba(255, 0, 0, 0.7));
+}
