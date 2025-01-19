@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Prediction Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- About Me Section -->
+  <div id="about-me" class="content">
+    <h1>Flavio Habilaj</h1>
+    <div class="image">
+      <img src="hey.png" alt="Flavio Habilaj">
+    </div>
+    <p>
+      Hello! I am an Albanian student at İTÜ in Istanbul. I decided to come here with a clear goal:
+      to turn my dreams into reality. From a young age, I have been captivated by technology, computers,
+      and coding. This passion led me to pursue a degree in Computer Engineering, aiming to become a skilled 
+      computer engineer. I am driven by a desire to solve complex problems, innovate, and make a meaningful 
+      impact in the world of technology. I approach challenges with determination and resilience, ready to tackle
+      whatever stands in my way. Hard work, dedication, and a thirst for knowledge define my journey. This is not 
+      just a career path for me; it's a mission to grow, excel, and create something valuable. Thank you for taking 
+      the time to learn about me. I hope you enjoy exploring my work.
+    </p>
+    <button class="button" onclick="showGamePage()">The Game</button>
+  </div>
+
+  <!-- Game Page -->
+  <div id="game-page" style="display: none;">
+    <header>
+      <h1>Word Prediction Game</h1>
+    </header>
+    <main>
+      <section id="game-board">
+        <h2>Guess the Word!</h2>
+        <div class="card-container">
+          <div class="card" id="card-1">?</div>
+          <div class="card" id="card-2">?</div>
+          <div class="card" id="card-3">?</div>
+          <div class="card" id="card-4">?</div>
+          <div class="card" id="card-5">?</div>
+        </div>
+      </section>
+      <section id="game-controls">
+        <input type="text" id="guess-input" placeholder="Enter a letter" maxlength="1">
+        <button id="submit-button">Submit</button>
+        <button id="reset-button">Reset the Game</button>
+      </section>
+      <section id="game-info">
+        <p><strong>Score:</strong> <span id="score">0</span></p>
+        <p><strong>Lives:</strong> 
+          <span id="lives">
+            <img src="heart.png" alt="Heart" class="heart">
+            <img src="heart.png" alt="Heart" class="heart">
+            <img src="heart.png" alt="Heart" class="heart">
+          </span>
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
